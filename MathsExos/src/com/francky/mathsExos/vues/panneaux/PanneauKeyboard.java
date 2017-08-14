@@ -10,7 +10,7 @@ import javax.swing.border.EmptyBorder;
 
 import com.francky.mathsExos.ctrl.Controleur;
 import com.francky.mathsExos.ctrl.EcouteurActions;
-import com.francky.mathsExos.modele.BoutonsMap;
+import com.francky.mathsExos.vues.panneaux.helper.BoutonsMap;
 
 public class PanneauKeyboard extends JPanel {
 
