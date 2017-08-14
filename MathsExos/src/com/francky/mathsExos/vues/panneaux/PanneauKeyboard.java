@@ -26,13 +26,13 @@ public class PanneauKeyboard extends JPanel {
 	 * Nombre de touches dans le clavier
 	 */
 	private static final int ROWS_NUMBER = 4;
-	private static final int COLS_NUMBER = 3;
+	private static final int COLS_NUMBER = 4;
 	
 	/*
 	 * hauteur et largeur d'une touche de clavier en pixel
 	 */
-	private static final int KEY_HEIGHT = 50;
-	private static final int KEY_WIDTH = 50;
+	public static final int KEY_HEIGHT = 50;
+	public static final int KEY_WIDTH = 70;
 	
 	/*
 	 * Marge autour d'une touche de clavier
@@ -54,7 +54,7 @@ public class PanneauKeyboard extends JPanel {
 	 * D�claration des boutons du clavier et d'une HashMap
 	 */
 	
-	HashMap<Character, JButton> boutons;	//HashMap qui associe un JButton � une lettre de l'alphabet
+	HashMap<Character, JButton> boutons;	//HashMap qui associe un JButton � un caractère -> utilisé pour la sérigraphie des boutons
 	BoutonsMap bm;							//Cr�ation d'une instance de la classe BoutonsMap
 	
 	/*
