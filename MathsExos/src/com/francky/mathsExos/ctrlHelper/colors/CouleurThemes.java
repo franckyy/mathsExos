@@ -1,4 +1,4 @@
-package com.francky.mathsExos.modele;
+package com.francky.mathsExos.ctrlHelper.colors;
 
 import java.awt.Color;
 

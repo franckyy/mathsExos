@@ -2,7 +2,7 @@ package com.francky.mathsExos.ctrl;
 
 import java.awt.Color;
 
-import com.francky.mathsExos.modele.CouleurThemes;
+import com.francky.mathsExos.ctrlHelper.colors.CouleurThemes;
 import com.francky.mathsExos.vues.FenetrePrincipale;
 
 public class Controleur {
@@ -12,7 +12,7 @@ public class Controleur {
 	
 
 	/*
-	 * Définition de la palette des couleurs pour le jeu 
+	 * Définition de la palette des couleurs pour le jeu (le contrôleur donne les couleurs aux panneaux)
 	 */
 	private String COLOR_THEME = "THEME3";	//THEME1 à THEME6
 	public Color COL_FOND;
