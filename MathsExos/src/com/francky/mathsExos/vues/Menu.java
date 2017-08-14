@@ -26,6 +26,25 @@ public class Menu extends JMenuBar {
 	
 	public Menu(FenetrePrincipale fenetreprincipale, Controleur ctrl) {
 		menuListener = new EcouteurActions(ctrl);
+		
+		//**********   JEU   *********************
+		
+		menuJeu = new JMenu("Jeu");
+		this.add(menuJeu);
+		
+
+		itemStart = new JMenuItem("Start / restart");
+		itemQuit = new JMenuItem("Quit");
+		menuJeu.add(itemStart);
+		menuJeu.add(itemQuit);
+		
+		itemStart.addActionListener(menuListener);
+		itemStart.setActionCommand("START");
+		itemQuit.addActionListener(menuListener);
+		itemQuit.setActionCommand("QUIT");
+		
+		//**********   AFFICHAGE   *********************
+		
 		menuAffichage = new JMenu("Affichage");
 
 		this.add(menuAffichage);
@@ -59,22 +78,6 @@ public class Menu extends JMenuBar {
 		itemTheme5.setActionCommand("THEME5");
 		itemTheme6.addActionListener(menuListener);
 		itemTheme6.setActionCommand("THEME6");
-		
-		//**********   JEU   *********************
-		
-		menuJeu = new JMenu("Jeu");
-		this.add(menuJeu);
-		
-
-		itemStart = new JMenuItem("Start / restart");
-		itemQuit = new JMenuItem("Quit");
-		menuJeu.add(itemStart);
-		menuJeu.add(itemQuit);
-		
-		itemStart.addActionListener(menuListener);
-		itemStart.setActionCommand("START");
-		itemQuit.addActionListener(menuListener);
-		itemQuit.setActionCommand("QUIT");
 		
 		fenetreprincipale.setJMenuBar(this);
 		
