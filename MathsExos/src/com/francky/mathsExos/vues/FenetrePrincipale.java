@@ -59,6 +59,13 @@ public class FenetrePrincipale extends JFrame {
 	
 	//**********************  METHODES
 
+	//demande la modification de la couleur de fond pour tous les panneaux
+	public void modifieBackgrounds() {
+		panneauAffichage.modifieBackgroundColor();
+		panneauKeyboard.modifieBackgroundColor();
+		panneauScore.modifieBackgroundColor();
+	}
+		
 	public void colorerTousBoutons() {
 		panneauKeyboard.colorerTousBoutons();
 	}

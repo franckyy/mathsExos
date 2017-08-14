@@ -82,8 +82,11 @@ public class PanneauKeyboard extends JPanel {
 		setBorder(new EmptyBorder(KEY_PANEL_MARGE_TOP, KEY_PANEL_MARGE_LEFT, KEY_PANEL_MARGE_BOTTOM, KEY_PANEL_MARGE_RIGHT));
 	}
 	
-	//**************************    METHODES
-	
+	//************************************************************METHODES
+	//modifier le background du panel
+	public void modifieBackgroundColor() {
+		setBackground(ctrl.COL_FOND);
+	}
 	
 	//repaint du panelKeyboard
 	public void repaintPanelKeyboard() {

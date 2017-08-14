@@ -31,4 +31,11 @@ public class PanneauScore extends JPanel {
 		setPreferredSize(new Dimension(SCORE_WIDTH, SCORE_HEIGTH));
 		setBackground(ctrl.COL_FOND);
 	}
+	
+
+	//************************************************************METHODES
+	//modifier le background du panel
+	public void modifieBackgroundColor() {
+		setBackground(ctrl.COL_FOND);
+	}
 }

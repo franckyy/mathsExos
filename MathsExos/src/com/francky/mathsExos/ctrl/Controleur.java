@@ -85,5 +85,10 @@ public class Controleur {
 	//**********************************************METHODES D'AFFICHAGES
 	//¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤  
 		
+	//¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤    repaint général qui modifie les couleurs de fond
+	public void rafraichiJeu() {
+		fenetrePrincipale.modifieBackgrounds();
+	}
+	
 	public void colorerTousBoutons() {fenetrePrincipale.colorerTousBoutons();}
 }

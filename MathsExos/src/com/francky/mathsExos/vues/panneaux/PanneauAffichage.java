@@ -35,4 +35,10 @@ public class PanneauAffichage extends JPanel {
 		setPreferredSize(new Dimension(PANEL_WIDTH, PANEL_HEIGHT));
 		setBackground(ctrl.COL_FOND);
 	}
+	
+	//***********************************************************METHODES
+	//modifier le background du panel
+	public void modifieBackgroundColor() {
+		setBackground(ctrl.COL_FOND);
+	}
 }

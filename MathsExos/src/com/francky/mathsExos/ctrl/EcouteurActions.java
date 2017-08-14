@@ -46,7 +46,7 @@ public class EcouteurActions implements ActionListener {
 			case "THEME6":
 				ctrl.resetColors(e.getActionCommand());
 				ctrl.colorerTousBoutons();
-//				ctrl.rafraichiJeu();
+				ctrl.rafraichiJeu();
 				break;
 			case "START":
 //				ctrl.start();
