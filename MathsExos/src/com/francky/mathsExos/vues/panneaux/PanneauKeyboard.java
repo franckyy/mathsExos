@@ -81,4 +81,12 @@ public class PanneauKeyboard extends JPanel {
 		//d�finition d'une marge autour du panneau clavier
 		setBorder(new EmptyBorder(KEY_PANEL_MARGE_TOP, KEY_PANEL_MARGE_LEFT, KEY_PANEL_MARGE_BOTTOM, KEY_PANEL_MARGE_RIGHT));
 	}
+	
+	//**************************    METHODES
+	
+	
+	//repaint du panelKeyboard
+	public void repaintPanelKeyboard() {
+		this.repaint();
+	}
 }

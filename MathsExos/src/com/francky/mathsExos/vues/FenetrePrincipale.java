@@ -55,5 +55,10 @@ public class FenetrePrincipale extends JFrame {
 		pack();
 		setLocationRelativeTo(null);
 	}
+	
+	
+	//**********************  METHODES
+
+	
 
 }

@@ -79,7 +79,7 @@ public class BoutonsMap {
 		btn8 = new JButton("8");
 		btn9 = new JButton("9");
 		btnMultiply = new JButton("X");
-		btnDel = new JButton("Efface");
+		btnDel = new JButton("Eff.");
 		btn0 = new JButton("0");
 		btnHelp = new JButton("Aide");
 		btnDivide = new JButton("/");
@@ -111,4 +111,22 @@ public class BoutonsMap {
 	public JButton getJBouton(String btnValue) {	
 		return boutons.get(btnValue);
 	}
+	
+	//GETTERS & SETTERS
+	public JButton getBtn1() {return btn1;}
+	public JButton getBtn2() {return btn2;}
+	public JButton getBtn3() {return btn3;}
+	public JButton getBtnPlus() {return btnPlus;}
+	public JButton getBtn4() {return btn4;}
+	public JButton getBtn5() {return btn5;}
+	public JButton getBtn6() {return btn6;}
+	public JButton getBtnMinus() {return btnMinus;}
+	public JButton getBtn7() {return btn7;}
+	public JButton getBtn8() {return btn8;}
+	public JButton getBtn9() {return btn9;}
+	public JButton getBtnMultiply() {return btnMultiply;}
+	public JButton getBtnDel() {return btnDel;}
+	public JButton getBtn0() {return btn0;}
+	public JButton getBtnHelp() {return btnHelp;}
+	public JButton getBtnDivide() {return btnDivide;}
 }

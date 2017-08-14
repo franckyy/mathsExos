@@ -80,4 +80,10 @@ public class Controleur {
 		COL_GRAPH = coul.getColPrimaire_1();
 		
 	}
+	
+	//¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤    
+	//**********************************************METHODES D'AFFICHAGES
+	//¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤  
+		
+
 }
