@@ -1,4 +1,4 @@
-package com.francky.mathsExos.modele;
+package com.francky.mathsExos.vues.panneaux.helper;
 
 import java.awt.Dimension;
 import java.util.ArrayList;
