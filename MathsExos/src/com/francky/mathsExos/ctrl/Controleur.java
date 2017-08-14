@@ -39,7 +39,7 @@ public class Controleur {
 		
 		//************************************Initialisations
 //		resetGame();
-//		resetColors(COLOR_THEME);		
+		resetColors(COLOR_THEME);		
 		
 		keyListener = new ListenerClavier(this);
 		
