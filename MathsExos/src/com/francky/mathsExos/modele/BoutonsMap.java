@@ -111,6 +111,18 @@ public class BoutonsMap {
 	public JButton getJBouton(String btnValue) {	
 		return boutons.get(btnValue);
 	}
+
+	public void colorerTousBoutons() {
+		for(JButton btn : boutons.values()){
+			if(btn.isEnabled()){
+				btn.setBackground(ctrl.COL_FOND_BOUTONS_NON_CLIC);
+				btn.setForeground(ctrl.COL_TEXT_BOUTONS_NON_CLIC);
+			} else {
+				btn.setBackground(ctrl.COL_FOND_BOUTONS_CLIC);
+				btn.setForeground(ctrl.COL_TEXT_BOUTONS_CLIC);
+			}
+		}
+	}
 	
 	//GETTERS & SETTERS
 	public JButton getBtn1() {return btn1;}

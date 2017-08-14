@@ -85,5 +85,5 @@ public class Controleur {
 	//**********************************************METHODES D'AFFICHAGES
 	//¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤  
 		
-
+	public void colorerTousBoutons() {fenetrePrincipale.colorerTousBoutons();}
 }

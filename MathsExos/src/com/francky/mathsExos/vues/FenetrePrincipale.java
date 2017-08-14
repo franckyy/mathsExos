@@ -59,6 +59,8 @@ public class FenetrePrincipale extends JFrame {
 	
 	//**********************  METHODES
 
-	
+	public void colorerTousBoutons() {
+		panneauKeyboard.colorerTousBoutons();
+	}
 
 }

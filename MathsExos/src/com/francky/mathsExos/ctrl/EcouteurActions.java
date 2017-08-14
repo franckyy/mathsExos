@@ -38,6 +38,22 @@ public class EcouteurActions implements ActionListener {
 			case "Aide":
 				System.out.println("clic sur " + commande);
 				break;
+			case "THEME1":
+			case "THEME2":
+			case "THEME3":
+			case "THEME4":
+			case "THEME5":
+			case "THEME6":
+				ctrl.resetColors(e.getActionCommand());
+				ctrl.colorerTousBoutons();
+//				ctrl.rafraichiJeu();
+				break;
+			case "START":
+//				ctrl.start();
+				break;
+			case "QUIT":
+				System.exit(0);
+				break;
 		}
 	}
 
