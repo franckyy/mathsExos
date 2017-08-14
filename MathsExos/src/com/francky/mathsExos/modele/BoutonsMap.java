@@ -28,6 +28,9 @@ public class BoutonsMap {
 		this.ctrl = ctrl;
 		boutons = new HashMap<String, JButton>();
 		this.panelkeyboard = panelkeyboard;
+		boutons = remplissageBoutons();
+		
+		
 	}
 	
 	//METHODES
