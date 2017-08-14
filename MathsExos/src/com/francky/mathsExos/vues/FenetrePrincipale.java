@@ -15,7 +15,10 @@ public class FenetrePrincipale extends JFrame {
 	
 	Controleur ctrl;
 
-	Menu menu;
+	public Menu menu;
+	public PanneauKeyboard panneauKeyboard;
+	public PanneauScore panneauScore;
+	public PanneauAffichage panneauAffichage;
 	
 	public FenetrePrincipale(Controleur ctrl) {
 		super("MathsExos");
@@ -28,6 +31,22 @@ public class FenetrePrincipale extends JFrame {
 		
 		// ajout d'un menu
 		menu = new Menu(this, ctrl);
+		
+		/*
+		 * Initialisation des panneaux
+		 */
+		//cr�ation du clavier
+		panneauKeyboard = new PanneauKeyboard(ctrl);
+		//ajout du clavier � la fen�tre
+		add(panneauKeyboard, BorderLayout.CENTER);
+		
+		//Cr�ation du panneau de score
+		panneauScore = new PanneauScore(ctrl);
+		add(panneauScore, BorderLayout.EAST);
+		
+		//cr�ation du panneau d'affichage des mots
+		panneauAffichage = new PanneauAffichage(ctrl);
+		add(panneauAffichage, BorderLayout.NORTH);
 		
 
 		pack();
