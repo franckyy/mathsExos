@@ -5,6 +5,9 @@ import java.awt.BorderLayout;
 import javax.swing.JFrame;
 
 import com.francky.mathsExos.ctrl.Controleur;
+import com.francky.mathsExos.vues.panneaux.PanneauAffichage;
+import com.francky.mathsExos.vues.panneaux.PanneauKeyboard;
+import com.francky.mathsExos.vues.panneaux.PanneauScore;
 
 public class FenetrePrincipale extends JFrame {
 
