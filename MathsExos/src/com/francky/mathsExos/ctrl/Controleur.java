@@ -3,6 +3,9 @@ package com.francky.mathsExos.ctrl;
 import java.awt.Color;
 
 import com.francky.mathsExos.ctrlHelper.colors.CouleurThemes;
+import com.francky.mathsExos.modele.Niveaux;
+import com.francky.mathsExos.modele.Operateur;
+import com.francky.mathsExos.modele.Operation;
 import com.francky.mathsExos.vues.FenetrePrincipale;
 
 public class Controleur {
@@ -34,10 +37,13 @@ public class Controleur {
 	public Color COL_MOT_TROUVE9;
 	public Color COL_GRAPH;
 	
+	
+	//********************CONSTRUCTEUR
 	public Controleur() {
 
 		
-		//************************************Initialisations
+		//Initialisations
+		Operation op = new Operation(Niveaux.NIVEAU1, Operateur.ADDITION);
 //		resetGame();
 		resetColors(COLOR_THEME);		
 		
