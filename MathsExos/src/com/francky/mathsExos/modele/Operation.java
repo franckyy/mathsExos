@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class Operation {
 
 	//**********************DECLARATIONS
@@ -17,7 +19,11 @@ public class Operation {
 
 	//**********************CONSTRUCTEUR
 	public Operation(Niveaux niveau, Operateur operateur){
-//		Integer nbreOperandes = niveau.getNbreOperandes();
+		
+		String json = niveau.getJsonMinMaxValuesFromNiveau();
+		
+		System.out.println(json);
+		
 		List<Integer> valeursOperandes = niveau.getMinMaxValuesFromNiveau();
 		
 		//Création de la liste des tableaux de chiffres possibles par opérande
@@ -28,15 +34,15 @@ public class Operation {
 			int minVal = valeursOperandes.get(i);
 			int maxVal = valeursOperandes.get(i + 1);
 				
-				int longueurTableau = maxVal - minVal + 1;	// "maxVal - minVal" est la taille du tableau, 
-														//ou le nombre de valeurs que pourra prendre l'opérande
-				int[] chiffresOperande = new int[longueurTableau];
-				
-				for(int rank = 0; rank < chiffresOperande.length; rank++) {	// chiffresOPerande.length = longueurTableau - 1 car il part de zéro
-					chiffresOperande[rank] = minVal + rank;
-				}
-				
-				operandesChiffres.add(chiffresOperande);
+			int longueurTableau = maxVal - minVal + 1;	// "maxVal - minVal" est la taille du tableau, 
+													//ou le nombre de valeurs que pourra prendre l'opérande
+			int[] chiffresOperande = new int[longueurTableau];
+			
+			for(int rank = 0; rank < chiffresOperande.length; rank++) {	// chiffresOPerande.length = longueurTableau - 1 car il part de zéro
+				chiffresOperande[rank] = minVal + rank;
+			}
+			
+			operandesChiffres.add(chiffresOperande);
 		}
 		
 		//On créé une liste d'opérandes car une liste est ordonnée.

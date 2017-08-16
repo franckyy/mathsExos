@@ -3,6 +3,12 @@ package com.francky.mathsExos.modele;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.management.ObjectName;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+
 public enum Niveaux {
 	
 	NIVEAU1(1,	2), 
@@ -63,5 +69,51 @@ public enum Niveaux {
 		}
 		
 		return listeValeurs;
+	}
+	
+	public String getJsonMinMaxValuesFromNiveau() {
+		
+		ObjectMapper mapper = new ObjectMapper();
+		ArrayNode arrayNode = mapper.createArrayNode();
+		
+		Integer rangNiveau = this.getRangNiveau();
+		
+		Integer nbreOperandes = 0;
+		int minValues[];
+		int maxValues[];
+		
+		switch(rangNiveau){
+		case 1:
+			nbreOperandes = 2;
+			minValues = new int[]{0,0};
+			maxValues = new int[]{3,3};
+			break;
+		case 2:
+			nbreOperandes = 2;
+			minValues = new int[]{0,0};
+			maxValues = new int[]{3,5};
+			break;
+		case 3:
+			nbreOperandes = 2;
+			minValues = new int[]{0,0};
+			maxValues = new int[]{5,5};
+			break;
+		default:
+			nbreOperandes = 2;
+			minValues = new int[]{0,0};
+			maxValues = new int[]{3,3};
+		}
+		
+		//CRéation du JSON
+		for(int i = 1; i < nbreOperandes + 1; i++){
+			ObjectNode objectNode = mapper.createObjectNode();
+			objectNode.put("operande", i);
+			objectNode.put("minVal", minValues[i - 1]);
+			objectNode.put("maxVal", maxValues[i - 1]);
+			
+			arrayNode.add(objectNode);
+		}
+		
+		return arrayNode.toString();
 	}
 }
